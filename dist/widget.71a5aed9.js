@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"widget.js":[function(require,module,exports) {
+})({"index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -129,35 +129,17 @@ function Bar(config) {
   return console.log(config.message, config.position);
 }
 
-var btn = document.createElement("button");
-btn.id = "btn";
-btn.innerHTML = "Show Bar";
-btn.style.display = "block";
-btn.style.margin = "400px auto";
-btn.style.height = "100px";
-btn.style.width = "100px";
-btn.style.backgroundColor = "white";
-btn.style.borderRadius = "50%";
-btn.style.color = "black";
-btn.style.border = "2px solid black";
-btn.addEventListener("click", function () {
-  console.log("clicked");
-});
-document.body.appendChild(btn);
 var _default = Bar;
 exports.default = _default;
-},{}],"index.js":[function(require,module,exports) {
+},{}],"widget.js":[function(require,module,exports) {
 "use strict";
 
-var _widget = _interopRequireDefault(require("./widget"));
+var _index = _interopRequireDefault(require("./index"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var myBar = new _widget.default({
-  message: 'Somethin message',
-  position: 'top'
-});
-},{"./widget":"widget.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+console.log(_index.default);
+},{"./index":"index.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -361,5 +343,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/js_task.e31bb0bc.js.map
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","widget.js"], null)
+//# sourceMappingURL=/widget.71a5aed9.js.map
