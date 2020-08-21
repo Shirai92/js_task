@@ -141,7 +141,7 @@ btn.style.borderRadius = "50%";
 btn.style.color = "black";
 btn.style.border = "2px solid black";
 btn.addEventListener("click", function () {
-  console.log("clicked");
+  console.log("clickedt");
 });
 document.body.appendChild(btn);
 var _default = Bar;
