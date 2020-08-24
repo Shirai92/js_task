@@ -1,7 +1,7 @@
 import Bar from "./widget"
 
 let myBar = new Bar({
-    message: 'Somethin message',
+    message: 'Add beautiful widgets to your website',
     position: 'top'
 })
 
